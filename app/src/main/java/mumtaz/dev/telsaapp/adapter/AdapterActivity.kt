@@ -9,7 +9,7 @@ import mumtaz.dev.telsaapp.adapter.AdapterActivity.*
 import mumtaz.dev.telsaapp.databinding.ItemActivityBinding
 import mumtaz.dev.telsaapp.model.GetAllActivityResponseItem
 
-class AdapterActivity(private val onClick: (GetAllActivityResponseItem)->Unit):RecyclerView.Adapter<ViewHolder>() {
+class AdapterActivity(private val onClick: (GetAllActivityResponseItem)->Unit):RecyclerView.Adapter<AdapterActivity.ViewHolder>() {
     private var listActivity: List<GetAllActivityResponseItem>? = null
 
     @SuppressLint("NotifyDataSetChanged")

@@ -1,14 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.DetailActivityFragment">
+    tools:context=".view.DetailActivityFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/brown"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="251dp"
+        android:src="@drawable/news1"
+        tools:ignore="ContentDescription" />
+
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="8dp"
+        app:cardCornerRadius="30dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/brown"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="16sp"
+                android:id="@+id/tv_judul_detail_activity"
+                android:textStyle="italic"
+                android:fontFamily="@font/poppins_italic"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:textAllCaps="true"
+                android:text="@string/judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_rilis_detail_activity"
+                android:fontFamily="@font/poppins_light"
+                android:layout_marginStart="20dp"
+                android:textSize="12sp"
+                android:text="@string/_13_maret_2022"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="SmallSp" />
+            <TextView
+                android:id="@+id/tv_desc_detail_activity"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="12sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/deskripsi"
+                android:layout_width="wrap_content"
+                android:justificationMode="inter_word"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

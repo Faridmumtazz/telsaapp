@@ -1,22 +1,37 @@
 package mumtaz.dev.telsaapp.view
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import mumtaz.dev.telsaapp.R
+import mumtaz.dev.telsaapp.databinding.FragmentDetailNewsBinding
+import mumtaz.dev.telsaapp.model.GetAllNewsResponseItem
 
 
-class DetailNewsFragment : Fragment() {
+class DetailNewsFragment : Fragment(R.layout.fragment_detail_news)  {
 
+    private var fragmentDetailNewsBinding: FragmentDetailNewsBinding?= null
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_detail_news, container, false)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val binding = FragmentDetailNewsBinding.bind(view)
+        fragmentDetailNewsBinding = binding
+
+        getAllNewsDetail()
+    }
+
+    @Suppress("DEPRECATION")
+    @SuppressLint("SetTextI18n")
+    fun getAllNewsDetail(){
+        if (requireArguments().containsKey("NEWSDATA")){
+            val newsDetail = arguments?.getSerializable("NEWSDATA") as GetAllNewsResponseItem
+
+            fragmentDetailNewsBinding!!.tvJudulDetailNews.text = newsDetail.judul
+            fragmentDetailNewsBinding!!.tvRilisDetailNews.text = newsDetail.rilis
+            fragmentDetailNewsBinding!!.tvDescDetailNews.text = newsDetail.description
+        }
     }
 
 

@@ -39,4 +39,9 @@
     <string name="edit_profile">Edit Profile</string>
     <string name="change_password">Change Password</string>
     <string name="logout">Logout</string>
+    <string name="home">home</string>
+    <string name="judul">judul</string>
+    <string name="_13_maret_2022">13 Maret 2022</string>
+    <string name="deskripsi">deskripsi</string>
+    <string name="your_comments">Your comments</string>
 </resources>

@@ -2,6 +2,7 @@ package mumtaz.dev.telsaapp.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class GetAllActivityResponseItem(
     @SerializedName("created_at")
@@ -16,4 +17,4 @@ data class GetAllActivityResponseItem(
     val rilis: String,
     @SerializedName("updated_at")
     val updatedAt: String
-)
+) : Serializable
