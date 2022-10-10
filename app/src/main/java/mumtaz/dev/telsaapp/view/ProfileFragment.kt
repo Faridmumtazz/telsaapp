@@ -1,4 +1,4 @@
-package mumtaz.dev.telsaapp
+package mumtaz.dev.telsaapp.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,33 +6,32 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
-import mumtaz.dev.telsaapp.databinding.ActivityMainBinding
-import mumtaz.dev.telsaapp.databinding.FragmentBoardingBinding
+import mumtaz.dev.telsaapp.R
+import mumtaz.dev.telsaapp.databinding.FragmentProfileBinding
 
 
-class BoardingFragment : Fragment(),View.OnClickListener {
+class ProfileFragment : Fragment(),View.OnClickListener {
 
-    private var _binding: FragmentBoardingBinding?= null
+    private var _binding: FragmentProfileBinding?= null
     private val binding get() =_binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        _binding = FragmentBoardingBinding.inflate(inflater, container, false)
+    ): View {
+        _binding = FragmentProfileBinding.inflate(inflater, container, false)
         return (binding.root)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnExplore.setOnClickListener(this)
+        binding.btnLogout.setOnClickListener(this)
     }
 
     override fun onClick(p0: View?) {
         when(p0?.id){
-            R.id.btn_explore -> {
-                p0.findNavController().navigate(R.id.action_boardingFragment_to_loginFragment)
+            R.id.btn_logout -> {
+                p0.findNavController().navigate(R.id.action_profileFragment_to_boardingFragment)
             }
         }
     }

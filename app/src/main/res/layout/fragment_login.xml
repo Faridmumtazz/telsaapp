@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@drawable/palm"
-    tools:context=".LoginFragment">
+    tools:context=".view.LoginFragment">
 
     <androidx.cardview.widget.CardView
         android:layout_marginRight="20dp"
@@ -14,6 +14,7 @@
         android:layout_marginTop="190dp"
         android:layout_gravity="center"
         app:cardBackgroundColor="#0000"
+        android:translationZ="4dp"
         app:cardCornerRadius="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -21,6 +22,7 @@
         <LinearLayout
             android:gravity="center_vertical"
             android:layout_margin="20dp"
+            android:background="#00ffffff"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -30,30 +32,37 @@
                 android:fontFamily="@font/poppins_bold"
                 android:textSize="40sp"
                 android:gravity="center"
-                android:text="Login"
+                android:layout_marginTop="20dp"
+                android:text="@string/login"
+                android:layout_marginStart="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
+                android:layout_marginStart="20dp"
                 android:fontFamily="@font/poppins_italic"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="email"
+                android:text="@string/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <EditText
+                android:layout_margin="15dp"
                 android:fontFamily="@font/poppins_italic"
                 android:layout_marginTop="10dp"
-                android:hint="masukan email"
+                android:hint="@string/masukan_email"
                 android:paddingStart="10dp"
                 style="@style/edit_text_style"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"/>
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:autofillHints=""
+                tools:ignore="RtlSymmetry" />
 
             <TextView
                 android:fontFamily="@font/poppins_italic"
-                android:layout_marginTop="20dp"
-                android:text="password"
+                android:text="@string/password"
+                android:layout_marginStart="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -61,17 +70,21 @@
                 android:fontFamily="@font/poppins_italic"
                 android:background="@drawable/edit_text_style"
                 android:layout_marginTop="10dp"
-                android:hint="masukan email"
+                android:hint="@string/masukan_email"
+                android:layout_margin="15dp"
                 style="@style/edit_text_style"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"/>
+                android:layout_height="50dp"
+                android:autofillHints=""
+                android:inputType="" />
 
             <Button
                 android:id="@+id/btn_login"
+                android:layout_margin="15dp"
                 android:fontFamily="@font/poppins_italic"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/button_style"
-                android:text="Login"
+                android:text="@string/login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -79,40 +92,36 @@
 
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:layout_marginTop="30dp"
-        app:cardElevation="4dp"
-        app:cardCornerRadius="20dp"
-        app:cardBackgroundColor="#0000"
-        android:background="@drawable/edit_text_style"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp">
+        android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginStart="80dp"
+            android:text="@string/don_t_have_an_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-            <TextView
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/poppins_medium"
-                android:layout_marginLeft="80dp"
-                android:text="Don't have an account?"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-            <TextView
-                android:id="@+id/btn_signup"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:text="Sign up"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/teal_700"
+            android:id="@+id/btn_signup"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
 
-        </LinearLayout>
+    </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+
+
+
+
 
 
 </LinearLayout>

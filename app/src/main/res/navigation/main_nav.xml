@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/boardingFragment"
-        android:name="mumtaz.dev.telsaapp.BoardingFragment"
+        android:name="mumtaz.dev.telsaapp.view.BoardingFragment"
         android:label="fragment_boarding"
         tools:layout="@layout/fragment_boarding" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="mumtaz.dev.telsaapp.LoginFragment"
+        android:name="mumtaz.dev.telsaapp.view.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -28,17 +28,24 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="mumtaz.dev.telsaapp.HomeFragment"
+        android:name="mumtaz.dev.telsaapp.view.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailNewsFragment"
+            app:destination="@id/detailNewsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailActivityFragment"
+            app:destination="@id/detailActivityFragment" />
+    </fragment>
     <fragment
         android:id="@+id/exploreFragment"
-        android:name="mumtaz.dev.telsaapp.ExploreFragment"
+        android:name="mumtaz.dev.telsaapp.view.ExploreFragment"
         android:label="fragment_explore"
         tools:layout="@layout/fragment_explore" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="mumtaz.dev.telsaapp.ProfileFragment"
+        android:name="mumtaz.dev.telsaapp.view.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action
@@ -47,11 +54,21 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="mumtaz.dev.telsaapp.RegisterFragment"
+        android:name="mumtaz.dev.telsaapp.view.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" >
         <action
             android:id="@+id/action_registerFragment_to_loginFragment2"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/detailNewsFragment"
+        android:name="mumtaz.dev.telsaapp.view.DetailNewsFragment"
+        android:label="fragment_detail_news"
+        tools:layout="@layout/fragment_detail_news" />
+    <fragment
+        android:id="@+id/detailActivityFragment"
+        android:name="mumtaz.dev.telsaapp.view.DetailActivityFragment"
+        android:label="fragment_detail_activity"
+        tools:layout="@layout/fragment_detail_activity" />
 </navigation>

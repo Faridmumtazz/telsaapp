@@ -6,7 +6,7 @@
     android:gravity="center"
     android:background="@drawable/palm"
     android:orientation="vertical"
-    tools:context=".BoardingFragment">
+    tools:context=".view.BoardingFragment">
 
 
     <Button
@@ -16,7 +16,7 @@
         android:layout_height="40dp"
         android:background="@drawable/get_started"
         android:fontFamily="@font/poppins_bold"
-        android:text="explore"
+        android:text="@string/explore"
         android:textSize="12sp" />
 
 

@@ -1,11 +1,13 @@
-package mumtaz.dev.telsaapp
+package mumtaz.dev.telsaapp.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import mumtaz.dev.telsaapp.R
 import mumtaz.dev.telsaapp.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 

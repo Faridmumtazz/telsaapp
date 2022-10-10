@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/palm"
-    tools:context=".ProfileFragment"
+    tools:context=".view.ProfileFragment"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content">
 
         <androidx.cardview.widget.CardView
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="40dp"
             app:cardCornerRadius="75dp"
             app:cardBackgroundColor="@color/teal_700"
@@ -24,12 +24,13 @@
             <ImageView
                 android:src="@drawable/personn"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/todo" />
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="130dp"
             android:layout_width="50dp"
             app:cardBackgroundColor="@color/teal_700"
@@ -43,14 +44,14 @@
 
                 <TextView
                     android:fontFamily="@font/poppins_italic"
-                    android:layout_marginLeft="20dp"
-                    android:text="8"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/_8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:fontFamily="@font/poppins_italic"
-                    android:layout_marginLeft="6dp"
-                    android:text="posts"
+                    android:layout_marginStart="6dp"
+                    android:text="@string/posts"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -60,7 +61,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="130dp"
             android:layout_width="80dp"
             app:cardElevation="4dp"
@@ -74,14 +75,14 @@
 
                 <TextView
                     android:fontFamily="@font/poppins_italic"
-                    android:layout_marginLeft="30dp"
-                    android:text="11"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/_11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:fontFamily="@font/poppins_italic"
-                    android:layout_marginLeft="6dp"
-                    android:text="Followers"
+                    android:layout_marginStart="6dp"
+                    android:text="@string/followers"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -91,7 +92,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="130dp"
             android:layout_width="80dp"
             app:cardElevation="4dp"
@@ -105,14 +106,14 @@
 
                 <TextView
                     android:fontFamily="@font/poppins_italic"
-                    android:layout_marginLeft="30dp"
-                    android:text="21"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/_21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:fontFamily="@font/poppins_italic"
-                    android:layout_marginLeft="6dp"
-                    android:text="Following"
+                    android:layout_marginStart="6dp"
+                    android:text="@string/following"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -135,9 +136,9 @@
             android:layout_height="match_parent">
             <TextView
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Asha Imalia Zahra"
+                android:text="@string/guest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -151,22 +152,24 @@
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        tools:ignore="UseCompoundDrawables">
 
                         <TextView
                             android:layout_marginTop="20dp"
-                            android:layout_marginLeft="30dp"
+                            android:layout_marginStart="30dp"
                             android:fontFamily="@font/poppins_regular"
-                            android:text="Posts"
+                            android:text="@string/posts"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
                         <ImageView
-                            android:layout_marginLeft="300dp"
+                            android:layout_marginStart="300dp"
                             android:layout_marginTop="20dp"
                             android:src="@drawable/ic_next"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/todo" />
 
                     </LinearLayout>
 
@@ -182,22 +185,24 @@
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
 
                     <TextView
                         android:layout_marginTop="20dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="Search User"
+                        android:text="@string/search_user"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="253dp"
+                        android:layout_marginStart="253dp"
                         android:layout_marginTop="20dp"
-                        android:src="@drawable/ic_next" />
+                        android:src="@drawable/ic_next"
+                        android:contentDescription="@string/todo" />
 
                 </LinearLayout>
 
@@ -213,22 +218,24 @@
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
 
                     <TextView
                         android:layout_marginTop="20dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="Follower"
+                        android:text="@string/follower"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
                     <ImageView
-                        android:layout_marginLeft="278dp"
+                        android:layout_marginStart="278dp"
                         android:layout_marginTop="20dp"
                         android:src="@drawable/ic_next"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/todo" />
 
                 </LinearLayout>
 
@@ -244,22 +251,24 @@
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
 
                     <TextView
                         android:layout_marginTop="20dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="Following"
+                        android:text="@string/following"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
                     <ImageView
-                        android:layout_marginLeft="270dp"
+                        android:layout_marginStart="270dp"
                         android:layout_marginTop="20dp"
                         android:src="@drawable/ic_next"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/todo" />
 
                 </LinearLayout>
 
@@ -275,22 +284,24 @@
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
 
                     <TextView
                         android:layout_marginTop="20dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="Edit Profile"
+                        android:text="@string/edit_profile"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
                     <ImageView
-                        android:layout_marginLeft="265dp"
+                        android:layout_marginStart="265dp"
                         android:layout_marginTop="20dp"
                         android:src="@drawable/ic_next"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/todo" />
 
                 </LinearLayout>
 
@@ -306,22 +317,24 @@
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
 
                     <TextView
                         android:layout_marginTop="20dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="Change Password"
+                        android:text="@string/change_password"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
                     <ImageView
-                        android:layout_marginLeft="206dp"
+                        android:layout_marginStart="206dp"
                         android:layout_marginTop="20dp"
                         android:src="@drawable/ic_next"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/todo" />
 
                 </LinearLayout>
 
@@ -336,7 +349,7 @@
                 android:fontFamily="@font/poppins_italic"
                 android:layout_marginTop="50dp"
                 android:background="@drawable/button_style"
-                android:text="Logout"
+                android:text="@string/logout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 

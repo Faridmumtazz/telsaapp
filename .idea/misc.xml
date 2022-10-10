@@ -8,13 +8,18 @@
         <entry key="..\:/appdev/telsaapp/app/src/main/res/drawable/get_started.xml" value="0.1" />
         <entry key="..\:/appdev/telsaapp/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
         <entry key="..\:/appdev/telsaapp/app/src/main/res/layout/fragment_boarding.xml" value="0.16666666666666666" />
+        <entry key="..\:/appdev/telsaapp/app/src/main/res/layout/fragment_detail_activity.xml" value="0.184375" />
+        <entry key="..\:/appdev/telsaapp/app/src/main/res/layout/fragment_detail_news.xml" value="0.184375" />
         <entry key="..\:/appdev/telsaapp/app/src/main/res/layout/fragment_explore.xml" value="0.16666666666666666" />
-        <entry key="..\:/appdev/telsaapp/app/src/main/res/layout/fragment_home.xml" value="0.14666666666666667" />
+        <entry key="..\:/appdev/telsaapp/app/src/main/res/layout/fragment_home.xml" value="0.14035087719298245" />
         <entry key="..\:/appdev/telsaapp/app/src/main/res/layout/fragment_login.xml" value="0.16666666666666666" />
-        <entry key="..\:/appdev/telsaapp/app/src/main/res/layout/fragment_profile.xml" value="0.16666666666666666" />
+        <entry key="..\:/appdev/telsaapp/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
         <entry key="..\:/appdev/telsaapp/app/src/main/res/layout/fragment_register.xml" value="0.1703125" />
         <entry key="..\:/appdev/telsaapp/app/src/main/res/layout/fragment_splash.xml" value="0.16666666666666666" />
+        <entry key="..\:/appdev/telsaapp/app/src/main/res/layout/item_activity.xml" value="0.16666666666666666" />
+        <entry key="..\:/appdev/telsaapp/app/src/main/res/layout/item_news.xml" value="0.184375" />
         <entry key="..\:/appdev/telsaapp/app/src/main/res/menu/nav_menu.xml" value="0.184375" />
+        <entry key="..\:/appdev/telsaapp/app/src/main/res/xml/network_security_config.xml" value="0.159375" />
       </map>
     </option>
   </component>

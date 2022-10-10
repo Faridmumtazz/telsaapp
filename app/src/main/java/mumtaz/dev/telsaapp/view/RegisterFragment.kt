@@ -1,4 +1,4 @@
-package mumtaz.dev.telsaapp
+package mumtaz.dev.telsaapp.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
-import mumtaz.dev.telsaapp.databinding.FragmentLoginBinding
+import mumtaz.dev.telsaapp.R
 import mumtaz.dev.telsaapp.databinding.FragmentRegisterBinding
 
 
@@ -17,7 +17,7 @@ class RegisterFragment : Fragment(),View.OnClickListener {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentRegisterBinding.inflate(inflater, container, false)
         return (binding.root)
