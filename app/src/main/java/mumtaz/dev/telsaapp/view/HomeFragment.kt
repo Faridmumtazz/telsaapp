@@ -42,11 +42,13 @@ class HomeFragment : Fragment() {
 
     private fun initRecyclerview(){
         _binding!!.rvNews.layoutManager = LinearLayoutManager(requireContext())
-        adapterNews = AdapterNews {
+        AdapterNews {
             val clickedNews = bundleOf("NEWSDATA" to it)
-            Navigation.findNavController(requireView())
-                .navigate(R.id.action_homeFragment_to_detailNewsFragment, clickedNews)
-        }
+            with(Navigation) {
+                findNavController(requireView())
+                    .navigate(R.id.action_homeFragment_to_detailNewsFragment, clickedNews)
+            }
+        }.also { adapterNews = it }
         _binding!!.rvNews.adapter = adapterNews
     }
 

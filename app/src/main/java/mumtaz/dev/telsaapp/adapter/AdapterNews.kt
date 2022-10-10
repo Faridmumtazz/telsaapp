@@ -32,9 +32,7 @@ class AdapterNews(private val onCLick: (GetAllNewsResponseItem)-> Unit): Recycle
 
             }
         }
-        holder.binding.itemNews.setOnClickListener{
-            onCLick(listNews!![position])
-        }
+        holder.binding.itemNews.setOnClickListener { onCLick(listNews!![position]) }
     }
 
     override fun getItemCount(): Int {

@@ -1,11 +1,8 @@
 package mumtaz.dev.telsaapp.adapter
-
-
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import mumtaz.dev.telsaapp.adapter.AdapterActivity.*
 import mumtaz.dev.telsaapp.databinding.ItemActivityBinding
 import mumtaz.dev.telsaapp.model.GetAllActivityResponseItem
 
@@ -33,9 +30,7 @@ class AdapterActivity(private val onClick: (GetAllActivityResponseItem)->Unit):R
                 binding.tvRilis.text = rilis
             }
         }
-        holder.binding.itemActivity.setOnClickListener{
-            onClick(listActivity!![position])
-        }
+        holder.binding.itemActivity.setOnClickListener { onClick(listActivity!![position]) }
     }
 
     override fun getItemCount(): Int {

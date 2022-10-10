@@ -54,6 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <!--suppress AndroidUnknownAttribute -->
                 <ImageView
                     android:layout_marginStart="80dp"
                     android:layout_marginTop="30dp"
@@ -61,6 +62,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:contentDescription="@string/text" />
+                <!--suppress AndroidUnknownAttribute -->
                 <ImageView
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="30dp"
@@ -74,6 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <!--suppress AndroidUnknownAttribute -->
                 <ImageView
                     android:layout_marginStart="80dp"
                     android:layout_marginTop="30dp"
@@ -81,6 +84,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:contentDescription="@string/todo" />
+                <!--suppress AndroidUnknownAttribute -->
                 <ImageView
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="30dp"
@@ -94,6 +98,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <!--suppress AndroidUnknownAttribute -->
                 <ImageView
                     android:layout_marginStart="80dp"
                     android:layout_marginTop="30dp"
@@ -101,6 +106,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:contentDescription="@string/todo" />
+                <!--suppress AndroidUnknownAttribute -->
                 <ImageView
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="30dp"

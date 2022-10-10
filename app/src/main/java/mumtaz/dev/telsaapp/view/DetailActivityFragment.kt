@@ -2,15 +2,11 @@ package mumtaz.dev.telsaapp.view
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import mumtaz.dev.telsaapp.R
 import mumtaz.dev.telsaapp.databinding.FragmentDetailActivityBinding
-import mumtaz.dev.telsaapp.databinding.FragmentDetailNewsBinding
 import mumtaz.dev.telsaapp.model.GetAllActivityResponseItem
-import mumtaz.dev.telsaapp.model.GetAllNewsResponseItem
 
 
 class DetailActivityFragment : Fragment(R.layout.fragment_detail_activity) {
