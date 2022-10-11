@@ -5,41 +5,58 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:layout_margin="15dp"
-    android:background="@drawable/palm"
+    android:background="@color/brown"
     tools:context=".view.ExploreFragment">
 
-    <TextView
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:textSize="20sp"
-        android:fontFamily="@font/poppins_italic"
-        android:text="@string/traceability_sawit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
-        android:textSize="16sp"
-        android:fontFamily="@font/poppins_regular"
-        android:text="@string/hai_guest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="20dp"
-        android:textSize="16sp"
-        android:fontFamily="@font/poppins_regular"
-        android:text="@string/telusuri_produk_cpo_mu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/telusuri_produk_cpo_mu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                style="@style/edit_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:hint="@string/masukan_kode_cpomu"
+                android:paddingStart="25dp"
+                android:inputType="text"
+                android:importantForAutofill="no"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:layout_marginStart="330dp"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_search"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
 
     <androidx.cardview.widget.CardView
-        app:cardCornerRadius="50dp"
-        android:layout_marginTop="30dp"
-        app:cardBackgroundColor="#0000"
-        app:cardElevation="6dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="30dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -48,76 +65,213 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="italic|bold"
+                android:fontFamily="@font/poppins_italic"
+                android:text="@string/hasil_tracing_cpo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-                <!--suppress AndroidUnknownAttribute -->
-                <ImageView
-                    android:layout_marginStart="80dp"
-                    android:layout_marginTop="30dp"
-                    android:src="@drawable/kebun"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:contentDescription="@string/text" />
-                <!--suppress AndroidUnknownAttribute -->
-                <ImageView
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="30dp"
-                    android:src="@drawable/logistik"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:contentDescription="@string/todo" />
-            </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <!--suppress AndroidUnknownAttribute -->
-                <ImageView
-                    android:layout_marginStart="80dp"
-                    android:layout_marginTop="30dp"
-                    android:src="@drawable/perebusan"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:contentDescription="@string/todo" />
-                <!--suppress AndroidUnknownAttribute -->
-                <ImageView
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_medium"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="30dp"
-                    android:src="@drawable/pemisahan"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:contentDescription="@string/todo" />
+                    android:text="@string/kode_cpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/k1k2p1k4k5l1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
             </LinearLayout>
-            <LinearLayout
-                android:orientation="horizontal"
+
+            <TableLayout
+                android:stretchColumns="3"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <!--suppress AndroidUnknownAttribute -->
-                <ImageView
-                    android:layout_marginStart="80dp"
-                    android:layout_marginTop="30dp"
-                    android:src="@drawable/pengempaan"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:contentDescription="@string/todo" />
-                <!--suppress AndroidUnknownAttribute -->
-                <ImageView
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="30dp"
-                    android:src="@drawable/pemurnian"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:contentDescription="@string/todo" />
-            </LinearLayout>
+                <TableRow
+                    android:background="@color/teal_700"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/kode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/parameter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/keterangan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </TableRow>
+                <TableRow
+                    android:background="#F0F7F7"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/k1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/alamat_kebun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/desa_pongrongo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </TableRow>
+                <TableRow
+                    android:background="#FFFFFF"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/k2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/status_sertifikasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/rspo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </TableRow>
+                <TableRow
+                    android:background="#F0F7F7"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/p1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/kualitas_cpo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/fraksi_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </TableRow>
+                <TableRow
+                    android:background="#FFFFFF"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/k4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/tanggal_panen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/_13_maret_2022"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:background="#F0F7F7"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/k5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/jenis_bibit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/pacifera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </TableRow>
+                <TableRow
+                    android:background="#FFFFFF"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/l1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/logistik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/po_haryanto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+
+
+
+
         </LinearLayout>
 
+
+
     </androidx.cardview.widget.CardView>
+
+
+
+
+
 
 
 

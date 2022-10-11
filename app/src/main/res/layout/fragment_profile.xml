@@ -22,7 +22,7 @@
             android:layout_height="150dp">
 
             <ImageView
-                android:src="@drawable/personn"
+                android:src="@drawable/logoo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/todo" />
@@ -50,8 +50,8 @@
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:fontFamily="@font/poppins_italic"
-                    android:layout_marginStart="6dp"
-                    android:text="@string/posts"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/iot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -81,8 +81,8 @@
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:fontFamily="@font/poppins_italic"
-                    android:layout_marginStart="6dp"
-                    android:text="@string/followers"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/website"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -112,8 +112,8 @@
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:fontFamily="@font/poppins_italic"
-                    android:layout_marginStart="6dp"
-                    android:text="@string/following"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/mobile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -125,6 +125,7 @@
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
         app:cardElevation="8dp"
         app:cardCornerRadius="40dp"
         android:layout_width="match_parent"
@@ -138,7 +139,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="30dp"
                 android:fontFamily="@font/poppins_bold"
-                android:text="@string/guest"
+                android:text="@string/telsa_super_apps"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -159,12 +160,12 @@
                             android:layout_marginTop="20dp"
                             android:layout_marginStart="30dp"
                             android:fontFamily="@font/poppins_regular"
-                            android:text="@string/posts"
+                            android:text="@string/iot"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
                         <ImageView
-                            android:layout_marginStart="300dp"
+                            android:layout_marginStart="315dp"
                             android:layout_marginTop="20dp"
                             android:src="@drawable/ic_next"
                             android:layout_width="wrap_content"
@@ -192,14 +193,14 @@
                         android:layout_marginTop="20dp"
                         android:layout_marginStart="30dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="@string/search_user"
+                        android:text="@string/website"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="253dp"
+                        android:layout_marginStart="280dp"
                         android:layout_marginTop="20dp"
                         android:src="@drawable/ic_next"
                         android:contentDescription="@string/todo" />
@@ -225,12 +226,12 @@
                         android:layout_marginTop="20dp"
                         android:layout_marginStart="30dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="@string/follower"
+                        android:text="@string/mobile"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
                     <ImageView
-                        android:layout_marginStart="278dp"
+                        android:layout_marginStart="290dp"
                         android:layout_marginTop="20dp"
                         android:src="@drawable/ic_next"
                         android:layout_width="wrap_content"
@@ -243,111 +244,13 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                app:cardElevation="4dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    tools:ignore="UseCompoundDrawables">
-
-                    <TextView
-                        android:layout_marginTop="20dp"
-                        android:layout_marginStart="30dp"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="@string/following"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                    <ImageView
-                        android:layout_marginStart="270dp"
-                        android:layout_marginTop="20dp"
-                        android:src="@drawable/ic_next"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/todo" />
-
-                </LinearLayout>
-
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                app:cardElevation="4dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    tools:ignore="UseCompoundDrawables">
-
-                    <TextView
-                        android:layout_marginTop="20dp"
-                        android:layout_marginStart="30dp"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="@string/edit_profile"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                    <ImageView
-                        android:layout_marginStart="265dp"
-                        android:layout_marginTop="20dp"
-                        android:src="@drawable/ic_next"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/todo" />
-
-                </LinearLayout>
-
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                app:cardElevation="4dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    tools:ignore="UseCompoundDrawables">
-
-                    <TextView
-                        android:layout_marginTop="20dp"
-                        android:layout_marginStart="30dp"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="@string/change_password"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                    <ImageView
-                        android:layout_marginStart="206dp"
-                        android:layout_marginTop="20dp"
-                        android:src="@drawable/ic_next"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/todo" />
-
-                </LinearLayout>
-
-
-
-            </androidx.cardview.widget.CardView>
 
             <Button
                 android:id="@+id/btn_logout"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
                 android:fontFamily="@font/poppins_italic"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="100dp"
                 android:background="@drawable/button_style"
                 android:text="@string/logout"
                 android:layout_width="match_parent"

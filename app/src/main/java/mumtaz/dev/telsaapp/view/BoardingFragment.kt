@@ -32,7 +32,7 @@ class BoardingFragment : Fragment(),View.OnClickListener {
     override fun onClick(p0: View?) {
         when(p0?.id){
             R.id.btn_explore -> {
-                p0.findNavController().navigate(R.id.action_boardingFragment_to_loginFragment)
+                p0.findNavController().navigate(R.id.action_boardingFragment_to_homeFragment)
             }
         }
     }

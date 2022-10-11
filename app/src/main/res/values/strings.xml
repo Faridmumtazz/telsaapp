@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TelsaApps</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -44,4 +45,32 @@
     <string name="_13_maret_2022">13 Maret 2022</string>
     <string name="deskripsi">deskripsi</string>
     <string name="your_comments">Your comments</string>
+    <string name="masukan_kode_cpomu">masukan kode cpomu</string>
+    <string name="hasil_tracing_cpo">HASIL TRACING CPO</string>
+    <string name="kode_cpo">kode cpo</string>
+    <string name="parameter">Parameter</string>
+    <string name="kode">Kode</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="k1k2p1k4k5l1">K1K2P1K4K5L1</string>
+    <string name="k1">K1</string>
+    <string name="alamat_kebun">Alamat Kebun</string>
+    <string name="desa_pongrongo">Desa Pongrongo</string>
+    <string name="k2">K2</string>
+    <string name="status_sertifikasi">Status Sertifikasi</string>
+    <string name="rspo">RSPO</string>
+    <string name="p1">P1</string>
+    <string name="kualitas_cpo">Kualitas CPO</string>
+    <string name="fraksi_4">Fraksi 4</string>
+    <string name="k4">K4</string>
+    <string name="tanggal_panen">Tanggal Panen</string>
+    <string name="k5">K5</string>
+    <string name="jenis_bibit">Jenis Bibit</string>
+    <string name="pacifera">Pacifera</string>
+    <string name="l1">L1</string>
+    <string name="logistik">Logistik</string>
+    <string name="po_haryanto">PO.Haryanto</string>
+    <string name="iot">IoT</string>
+    <string name="website">Website</string>
+    <string name="telsa_super_apps">Telsa Super Apps</string>
+    <string name="mobile">Mobile</string>
 </resources>
